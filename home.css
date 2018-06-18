@@ -1,0 +1,28 @@
+h1.home{
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: cornflowerblue;
+    margin: 0;
+}
+a.logout{
+    float: right;
+    background: blueviolet;
+    color: whitesmoke;
+    padding: 10px;
+}
+a.logout:hover{
+    background: whitesmoke;
+    color: blueviolet;
+}
+form{
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+}
