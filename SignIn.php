@@ -25,7 +25,7 @@
             <?php if(isset($_GET['pwd'])){
                 echo  'value = "'. $_GET['pwd'].'"';
             } ?> /> <br>
-        <input class="button1" type="submit" formaction="/LessionWeb/userForm/RegisterForm.php" value="Register">
+        <input class="button1" type="submit" formaction="RegisterForm.php" value="Register">
         <input class="button1" type="submit" value="Sign In">
 </form>
 </body>

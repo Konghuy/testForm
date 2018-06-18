@@ -44,6 +44,7 @@
                 ){
                     header("LOCATION: index.php");
                     $_SESSION['user']= $user;
+                    $_SESSION['user_id']=$userinfo[0]['user_id'];
                    // echo $_SESSION['user'];
                 }else {
                     $errors = "Invalide User name and Password";

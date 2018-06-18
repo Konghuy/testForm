@@ -59,8 +59,8 @@
             }   
             // $u_id = $userinfo[$id]['user_id'];
             // echo $u_id;
-            echo "<td><input type='submit' formaction='/LessionWeb/userForm/edit.php?id=$u_id' value='Edit'>" ;//echo $u_id;
-            echo "<input type='submit' formaction='/LessionWeb/userForm/delete.php?id=$u_id' value='Delete'></td>";
+            echo "<td><input type='submit' formaction='edit.php?id=$u_id' value='Edit'>" ;//echo $u_id;
+            echo "<input type='submit' formaction='delete.php?id=$u_id' value='Delete'></td>";
             echo "</tr>";
         }
         ?>

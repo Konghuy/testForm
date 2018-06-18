@@ -9,11 +9,6 @@
     $pwd = $_POST['txtPwd1'];
     
     $data = array();
-    if(!isset($_SESSION['id'])){
-        echo "Not session id";
-        exit;
-        // unset($_SESSION['id');
-    }
     $id = $_SESSION['id'];
     $errors = array();
 
@@ -33,15 +28,16 @@
             array_push($errors, "Password is require.");
         }
 
-      //  print_r($id);
-        $sql_compare = "SELECT * FROM tbuser WHERE tbuser.user_id <> $id" ;
+       
 
-            $results = mysqli_query($conn, $sql_compare);
-            $check = mysqli_num_rows($results);
-            //print_r($results);
-            if($check > 0){
-                array_push($errors, "Dubplicate User Name.");
-            }
+        // $sql_compare = "SELECT * FROM tbuser WHERE user_id <> $id" ;
+
+        //     $results = mysqli_query($conn, $sql_compare);
+        //     $check = mysqli_num_rows($results);
+        //     //print_r($results);
+        //     if($check > 0){
+        //         array_push($errors, "Dubplicate User Name.");
+        //     }
         // $sql_compare = "UPDATE tbuser
         //                 SET 
         //                 WHERE user_names = '$user'";
@@ -62,8 +58,8 @@
                         user_lname = '$lname',
                         user_email = '$email',
                         user_names = '$user',
-                        user_pwd = '$pwd',
-                    WHERE tbuser.user_id = '$id'
+                        user_pwd = '$pwd'
+                        WHERE user_id = '$id'
             ";
             if ($conn->query($sql) === TRUE) {
             //echo "New record has been added.";
